@@ -1,0 +1,92 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+@media screen and (min-width: 767px) {
+    /* Hide captions */
+    .jumbotron {
+        padding: 10px;
+    }
+}
+.back-btn {
+    margin: 10px 0;
+}
+
+.order-btn {
+    float: right;
+}
+
+.car-info-btn {
+    float: right;
+}
+
+.short-info-block {
+    display: inline-flex;
+}
+.short-info-block>div {
+    padding-left: 10px;
+}
+.car-small-img {
+    height: 100px;
+    widows: 100px;
+}
+
+.control-block {
+    display: flow-root;
+}
+.control-block>.btn {
+    margin-top: 10px;
+    padding: 10px;
+    float: right;
+}
+.control-block>.btn-primary {
+    margin-left: 10px;
+}
+.car-filter-block {
+    padding: 10px;
+}
+
+.panel-body>div {
+    display: inline-block;
+    padding: 20px;
+}
+.panel-body>.control-panel {
+    float: right;
+}
+
+.add-car-panel>form>div {
+    display: inline-table;
+    padding: 20px;
+}
+

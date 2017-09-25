@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Carolution</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-controller="Home" asp-action="Index" class="navbar-brand">Car Store</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Магазин</a></li>
+                    <li><a href="/management">Управление</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2017 - CarSolution</p>
+        </footer>
+    </div>
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/lib/angular/angular.js"></script>
+        <script src="~/lib/angular-route/angular-route.js"></script>
+        <script src="~/lib/chart.js/dist/Chart.min.js"></script>
+        <script src="~/lib/angular-chart.js/dist/angular-chart.min.js"></script>
+
+    <script src="~/app/app.module.js"></script>
+    <script src="~/app/components/management/controllers/management.controller.js"></script>
+     <script src="~/app/components/management/controllers/statistic.controller.js"></script>
+    <script src="~/app/components/management/directives/menu.directive.js"></script>
+    <script src="~/app/components/management/directives/statistic.directive.js"></script>
+    <script src="~/app/components/management/services/statistic.service.js"></script>
+    <script src="~/app/components/management/services/carManagement.service.js"></script>
+    <script src="~/app/components/store/controllers/store.controller.js"></script>
+    <script src="~/app/components/store/controllers/car.controller.js"></script>
+    <script src="~/app/components/store/directives/carFilter.directive.js"></script>
+    <script src="~/app/components/store/directives/carList.directive.js"></script>
+    <script src="~/app/components/store/services/car.service.js"></script>
+    <script src="~/app/app.route.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>
